@@ -1,12 +1,9 @@
 package net.pat235.replacerwand;
 
+import net.pat235.replacerwand.items.ModItems;
 import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
-
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
@@ -25,9 +22,9 @@ public class ReplacerWand {
     public ReplacerWand(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
-
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -39,9 +36,10 @@ public class ReplacerWand {
 
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES ){//|| event.getTabKey() == CreativeModeTabs.OP_BLOCKS){
+            event.accept(ModItems.REPLACER_WAND);
+        }
     }
-
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
