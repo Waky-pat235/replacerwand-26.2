@@ -1,0 +1,13 @@
+{
+  "itemGroup.replacerwand": "Example Mod Tab",
+  "block.replacerwand.example_block": "Example Block",
+  "item.replacerwand.example_item": "Example Item",
+
+  "replacerwand.configuration.title": "Replacer Wand Configs",
+  "replacerwand.configuration.section.replacerwand.common.toml": "Replacer Wand Configs",
+  "replacerwand.configuration.section.replacerwand.common.toml.title": "Replacer Wand Configs",
+  "replacerwand.configuration.items": "Item List",
+  "replacerwand.configuration.logDirtBlock": "Log Dirt Block",
+  "replacerwand.configuration.magicNumberIntroduction": "Magic Number Text",
+  "replacerwand.configuration.magicNumber": "Magic Number"
+}
