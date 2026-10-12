@@ -1,5 +1,10 @@
 {
   "item.replacerwand.replacer_wand": "Replacer Wand",
   "tooltip.replacerwand.replacer_wand": "§9Replace a block with the one in your off-hand",
-  "tooltip.replacerwand.shift_read_more": "§7[Shift]"
+  "tooltip.replacerwand.shift_read_more": "§7[Shift]",
+  "message.replacerwand.need_creative_mode": "You must be in Creative mode to use this",
+  "message.replacerwand.need_offhand_block": "You must be holding a block in your offhand",
+  "message.replacerwand.not_allowed_to_replace": "You don't have permission to replace this block",
+  "message.replacerwand.not_allowed_to_place": "You don't have permission to place this block",
+  "message.replacerwand.not_allowed_to_build": "You don't have permission to build here"
 }
