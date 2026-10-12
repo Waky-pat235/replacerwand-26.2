@@ -31,6 +31,7 @@ displayURL="https://github.com/Waky-pat235/replacerwand-26.2" #optional
 
 # A file name (in the root of the mod JAR) containing a logo for display
 iconFile="logo.png" #optional
+logoFile="logo.png" #optional
 
 # A text field displayed in the mod UI
 #credits="" #optional
